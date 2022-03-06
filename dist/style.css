@@ -1,0 +1,34 @@
+:root{
+    --primary: pink;
+    --secondary: blue;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    color: rebeccapurple;
+}
+
+body{
+    font-family: 'Arial', cursive, Helvetica, sans-serif;
+}
+
+.card-header{
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--secondary);
+    color: var(--primary);
+
+}
+.container{
+    margin: 100px auto;
+    justify-content: space-evenly;
+    display: flex;
+}
