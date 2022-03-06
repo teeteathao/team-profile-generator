@@ -1,5 +1,5 @@
 :root{
-    --primary: pink;
+    --primary: rgb(62, 214, 83);
     --secondary: blue;
 }
 
@@ -8,7 +8,7 @@
 }
 
 a{
-    color: rebeccapurple;
+    color: rgb(100, 209, 228);
 }
 
 body{
