@@ -13,7 +13,7 @@ describe('Engineer Class', ()=>{
     it('Gets the employees github account ', ()=>{
         const engineer = new Engineer('Thao', 111, 'thaon@testemail.com', 'teetest');
 
-        expect(engineer.getGitHub()).toEqual(expect.stringContaining(engineer.github.toString()));
+        expect(engineer.getGithub()).toEqual(expect.stringContaining(engineer.github.toString()));
     })
 
     //getRole() function
