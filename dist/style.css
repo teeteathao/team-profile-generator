@@ -24,9 +24,9 @@ body{
     flex-direction: column;
     justify-content: center;
     background-color: var(--secondary);
-    color: var(--primary);
-
+    color: var(--primary)
 }
+
 .container{
     margin: 100px auto;
     justify-content: space-evenly;
