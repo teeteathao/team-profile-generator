@@ -1,5 +1,5 @@
 // createHTML
-const createHTML = require('./createHTML');
+const createHTML = require('./src/createHTML');
 
 // const Employee = require('./lib/Employee');
 const Manager = require('./lib/Manager');
@@ -225,8 +225,8 @@ const addEmployee = () => {
          .then(employeeList => {
              return createHTML(employeeList);
     })
-         .then(pageHTML => {
-             return writeFile(pageHTML);
+         .then(employeepageHTML => {
+             return writeFile(employeepageHTML);
     })
         .catch(err => {
         console.log(err);

@@ -9,8 +9,8 @@ const generateManager = function (managerObject) {
             </div>
             <div class="card-body">
                 <p class="id">ID: ${managerObject.id}</p>
-                <p class="email">Email: <a href="mailto:${managerObj.email}">${managerObj.email}</a></p>
-                <p class="office">Office Number: ${managerObj.officeNumber}</p>
+                <p class="email">Email: <a href="mailto:${managerObject.email}">${managerObject.email}</a></p>
+                <p class="office">Office Number: ${managerObject.officeNumber}</p>
             </div>
         </div>
     </div>
@@ -28,8 +28,8 @@ const generateEngineer = function (engineerObject) {
             </div>
             <div class="card-body">
                 <p class="id">ID: ${engineerObject.id}</p>
-                <p class="email">Email: <a href="mailto:${engineerObj.email}">${engineerObj.email}</a></p>
-                <p class="github">Github: <a href="https://github.com/${engineerObj.github}" target= "_blank">${engineerObj.github}</a></p>
+                <p class="email">Email: <a href="mailto:${engineerObject.email}">${engineerObject.email}</a></p>
+                <p class="github">Github: <a href="https://github.com/${engineerObject.github}" target= "_blank">${engineerObject.github}</a></p>
             </div>
         </div>
     </div>
@@ -47,8 +47,8 @@ const generateIntern = function (internObject) {
             </div>
             <div class="card-body">
                 <p class="id">ID: ${internObject.id}</p>
-                <p class="email">Email:<a href="mailto:${internObj.email}">${internObj.email}</a></p>
-                <p class="school">School: ${internObj.school}</p>
+                <p class="email">Email:<a href="mailto:${internObject.email}">${internObject.email}</a></p>
+                <p class="school">School: ${internObject.school}</p>
             </div>
         </div>
     </div>
@@ -63,15 +63,15 @@ createHTML = (data) =>{
 
         if(currentRole === 'Manager'){
             const managerCard = generateManager(currentEmployee);
-            pageArray.push(managerCard);
+            pageList.push(managerCard);
         }
         if(currentRole === 'Engineer'){
             const engineerCard = generateEngineer(currentEmployee);
-            pageArray.push(engineerCard);
+            pageList.push(engineerCard);
         }
         if(currentRole === 'Intern'){
             const internCard = generateIntern(currentEmployee);
-            pageArray.push(internCard);
+            pageList.push(internCard);
         }
     }
 
@@ -89,7 +89,7 @@ const generateTeamPage = function (employeeTeamCards){
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Team Profile</title>
+        <title>Team Profile Page</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">

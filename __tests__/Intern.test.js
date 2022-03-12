@@ -1,7 +1,7 @@
 const Intern = require('../lib/Intern');
 
 describe('Intern class', ()=>{
-    // Constructor
+    // Constructor for intern
     it('Creates an intern object', ()=>{
         const intern = new Intern('Thao', 111, 'thaon@testemail.com','UCSD');
 

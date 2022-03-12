@@ -15,18 +15,20 @@ body{
     font-family: 'Arial', cursive, Helvetica, sans-serif;
 }
 
+/* card design for the employees */
 .card-header{
-    background-color: var(--primary);
-    color: var(--secondary);
+    background-color: purple;
+    color: whitesmoke;
 }
 .card-body{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    background-color: var(--secondary);
-    color: var(--primary)
+    flex-direction: column;
+    background-color: palevioletred;
+    color: black;
 }
 
+/* display of the card */
 .container{
     margin: 100px auto;
     justify-content: space-evenly;

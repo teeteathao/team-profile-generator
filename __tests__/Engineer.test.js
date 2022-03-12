@@ -1,7 +1,7 @@
 const Engineer = require('../lib/Engineer');
 
 describe('Engineer Class', ()=>{
-    //Constrcutor
+    //Constrcutor for engineer
     it('Creates an engineer object', ()=>{
         const engineer = new Engineer('Thao', 111, 'thaon@testemail.com', 'teetest');
 
