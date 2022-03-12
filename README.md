@@ -17,8 +17,10 @@ Additionally, when I click on an email address in the HTML, then my default emai
 
 The following image shows a mock-up of the generated HTML’s appearance and functionality:
 
-![HTML webpage titled “My Team” features five boxes listing employee names, titles, and other key info.](./Assets/10-object-oriented-programming-homework-demo.png)
+[![Team-Profile.png](https://i.postimg.cc/CMcywGrj/Team-Profile.png)](https://postimg.cc/V50ZRC86)
 
 
 ## Video
 https://watch.screencastify.com/v/Ppt53z8mgHkiqvw7F8na
+
+[![Video-Team-Prof.png](https://i.postimg.cc/BvBYM3dx/Video-Team-Prof.png)](https://postimg.cc/KK4D86cz)
