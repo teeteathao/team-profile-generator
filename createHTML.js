@@ -1,14 +1,14 @@
 //Generate Manager Card
-const generateManager = function (managerObj) {
+const generateManager = function (managerObject) {
     return `
     <div class="col-4 mt-4">
         <div class="card h-100">
             <div class="card-header">
-                <h3>${managerObj.name}</h3>
+                <h3>${managerObject.name}</h3>
                 <h4>Manager</h4><i class="material-icons">local_cafe</i>
             </div>
             <div class="card-body">
-                <p class="id">ID: ${managerObj.id}</p>
+                <p class="id">ID: ${managerObject.id}</p>
                 <p class="email">Email: <a href="mailto:${managerObj.email}">${managerObj.email}</a></p>
                 <p class="office">Office Number: ${managerObj.officeNumber}</p>
             </div>
@@ -18,16 +18,16 @@ const generateManager = function (managerObj) {
 }
 
 //Generate Engineer Card
-const generateEngineer = function (engineerObj) {
+const generateEngineer = function (engineerObject) {
     return `
     <div class="col-4 mt-4">
         <div class="card h-100">
             <div class="card-header">
-                <h3>${engineerObj.name}</h3>
+                <h3>${engineerObject.name}</h3>
                 <h4>Engineer</h4><i class="material-icons">devices</i>
             </div>
             <div class="card-body">
-                <p class="id">ID: ${engineerObj.id}</p>
+                <p class="id">ID: ${engineerObject.id}</p>
                 <p class="email">Email: <a href="mailto:${engineerObj.email}">${engineerObj.email}</a></p>
                 <p class="github">Github: <a href="https://github.com/${engineerObj.github}" target= "_blank">${engineerObj.github}</a></p>
             </div>
@@ -37,16 +37,16 @@ const generateEngineer = function (engineerObj) {
 }
 
 //Generate Intern Card
-const generateIntern = function (internObj) {
+const generateIntern = function (internObject) {
     return `
     <div class="col-4 mt-4">
         <div class="card h-100">
             <div class="card-header">
-                <h3>${internObj.name}</h3>
+                <h3>${internObject.name}</h3>
                 <h4>Intern</h4><i class="material-icons">help</i>
             </div>
             <div class="card-body">
-                <p class="id">ID: ${internObj.id}</p>
+                <p class="id">ID: ${internObject.id}</p>
                 <p class="email">Email:<a href="mailto:${internObj.email}">${internObj.email}</a></p>
                 <p class="school">School: ${internObj.school}</p>
             </div>
@@ -56,7 +56,7 @@ const generateIntern = function (internObj) {
 }
 
 createHTML = (data) =>{
-    pageArray = [];
+    pageList = [];
     for(let i = 0; i < data.length; i++){
         const currentEmployee = data[i];
         const currentRole = currentEmployee.getRole();
@@ -75,13 +75,14 @@ createHTML = (data) =>{
         }
     }
 
-    const employeeCards = pageArray.join('');
+    const employeeCards = pageList.join('');
 
-    const generatedTeam = generateTeamPage(employeeCards);
-    return generatedTeam;
+    const generatedEmployeeTeam = generateTeamPage(employeeCards);
+    return generatedEmployeeTeam;
 }
 
-const generateTeamPage = function (employeeCards){
+// generate the employee cards created
+const generateTeamPage = function (employeeTeamCards){
     return `
     <!DOCTYPE html>
     <html lang="en">
@@ -100,7 +101,7 @@ const generateTeamPage = function (employeeCards){
             <div class="container">
                 <div class="row justify-content-center" id="team-cards">
                     <!--Team Cards-->
-                    ${employeeCards}
+                    ${employeeTeamCards}
                 </div>
             </div>
         </main>
